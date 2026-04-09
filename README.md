@@ -1,49 +1,189 @@
-<!-- CHATBOT_KNOWLEDGE_START -->
+# 🚀 Portfolio AI - WebForge Hackathon
 
-# Portfolio Knowledge Base
+An advanced AI-powered portfolio website built with Next.js 15, featuring intelligent chat, 3D graphics, animated UI, and Gemini AI integration.
 
-## About Ronit
-Ronit Soni is a Full Stack Developer from India who specializes in the MERN stack. He enjoys building modern web applications, AI powered tools, and responsive user interfaces.
+## ✨ Features
 
-## Skills
-Frontend: HTML, CSS, JavaScript, TypeScript, React, Tailwind  
-Backend: Node.js, Express.js  
-Database: MongoDB, Firebase  
-Tools: Git, GitHub, Docker, VS Code, Postman  
-Other: REST APIs, Responsive Design, UI/UX fundamentals
+- **🤖 AI Chat Assistant** - Powered by Google Gemini AI with chat history
+- **🎨 Interactive 3D Graphics** - Three.js integration for stunning animations
+- **✨ Smooth Animations** - Framer Motion and Motion library for fluid UI
+- **🌙 Dark Mode Support** - Next Themes for seamless theme switching
+- **📱 Responsive Design** - Mobile-first approach with Tailwind CSS
+- **⚡ Performance Optimized** - Built on Next.js 15 with automatic optimization
+- **🎯 Modern Stack** - React 19, TypeScript, Tailwind CSS 4
 
-## Current Work
-Ronit is currently working as a Virtual Intern at Algonive where he focuses on building production ready applications and improving his system design skills.
+## 🛠 Tech Stack
 
-## Projects
+### Frontend
+- **Framework**: Next.js 15.1.9
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 4, Motion, Framer Motion
+- **Language**: TypeScript
+- **3D**: Three.js, React Three Fiber
+- **Components**: Radix UI
 
-### SpaceX Clone
-A responsive clone of the SpaceX website built using HTML, CSS, and JavaScript. It includes mobile navigation, modern UI sections, and responsive layouts.
+### AI & Backend
+- **AI**: Google Generative AI (Gemini)
+- **Analytics**: Vercel Analytics
+- **Validation**: Zod
 
-### Slice Clone
-A fintech landing page inspired by the Slice banking platform. Built with HTML, CSS, and JavaScript focusing on UI design and responsive layout.
+### DevTools
+- **Linting**: ESLint with Prettier
+- **Build**: Next.js Build System
+- **Deployment**: Vercel
 
-### Dorje Teas Clone
-A brand-style website clone with product sections, responsive navigation, and clean UI built with HTML and CSS.
+## 📦 Installation
 
-### Proxgy Clone
-A modern static landing page clone focusing on layout structure and responsive design.
+### Prerequisites
+- Node.js 18+
+- npm/pnpm/yarn
 
-### News App
-A dynamic news application that fetches real-time news using a public API and displays category-based articles.
+### Setup
 
-### Myntra Clone
-A React-based e-commerce UI clone that includes product listing, routing, and responsive design.
+```bash
+# Clone the repository
+git clone https://github.com/RonitkumarSoni/Portfolio-AI---WebForge-Hackathone.git
+cd Portfolio-AI---WebForge-Hackathone/myPortfolio/portfolio
 
-## Contact
-Email: ronitkumarsoni.cg@gmail.com  
-LinkedIn: https://www.linkedin.com/in/ronit-soni-63bb3a37a/  
-GitHub: https://github.com/RonitkumarSoni
+# Install dependencies
+npm install
+# or
+pnpm install
 
-## Personality
-Ronit enjoys solving coding problems, building projects, learning new technologies, and improving user experience in applications.
+# Create environment variables
+cp .env.example .env.local
+```
 
-## Fun Fact
-Ronit often debugs code using console.log() and sometimes even explains problems to a rubber duck.
+### Environment Variables
 
-<!-- CHATBOT_KNOWLEDGE_END -->
+Add to `.env.local`:
+
+```env
+# Google Gemini API
+NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
+
+# Other configurations
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+## 🚀 Development
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm run start
+
+# Run linting
+npm run lint
+```
+
+The app will be available at `http://localhost:3000`
+
+## 📂 Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── app/              # Next.js app directory
+│   │   └── api/         # API routes
+│   │   └── chat/        # Chat page
+│   │   └── projects/    # Projects page
+│   │   └── skills/      # Skills page
+│   │   └── certificates/# Certificates page
+│   ├── components/       # React components
+│   │   └── chat/        # Chat components
+│   │   └── magicui/     # Magic UI components
+│   │   └── ui/          # Base UI components
+│   ├── data/            # Static data
+│   ├── hooks/           # Custom React hooks
+│   └── lib/             # Utilities
+├── public/              # Static assets
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+├── next.config.ts
+└── README.md
+```
+
+## 🌐 Pages
+
+- **Home** - Landing page with profile and intro
+- **Chat** - AI-powered chat interface with Gemini
+- **Projects** - Showcase of projects
+- **Skills** - Skills and technologies
+- **Certificates** - Certifications and achievements
+
+## 🚀 Deployment
+
+### Deploy on Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Go to [Vercel Dashboard](https://vercel.com)
+3. Click "New Project"
+4. Import your GitHub repository
+5. Set environment variables:
+   - `NEXT_PUBLIC_GEMINI_API_KEY` - Your Gemini API key
+6. Click "Deploy"
+
+```bash
+# Or deploy via CLI
+npm i -g vercel
+vercel
+```
+
+### Manual Deployment
+
+```bash
+# Build the project
+npm run build
+
+# Start production server
+npm run start
+```
+
+## 📝 Configuration
+
+### Next.js Config
+- See `next.config.ts` for Next.js customizations
+- TypeScript config in `tsconfig.json`
+
+### Tailwind CSS
+- Configuration in `tailwind.config.ts`
+- PostCSS config in `postcss.config.mjs`
+
+### ESLint & Prettier
+- Rules in `.eslintrc.js`
+- Format config in `.prettierrc`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📧 Contact
+
+**Ronit Soni** - Full Stack Developer
+
+- 📧 Email: ronitkumarsoni.cg@gmail.com
+- 💼 LinkedIn: [Ronit Soni](https://www.linkedin.com/in/ronit-soni-63bb3a37a/)
+- 🐙 GitHub: [@RonitkumarSoni](https://github.com/RonitkumarSoni)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🎓 Hackathon
+
+Built for **WebForge Hackathon 2025** - Portfolio AI Track
+
+---
+
+**Made with ❤️ by Ronit Soni**
